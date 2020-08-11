@@ -68,3 +68,16 @@ if (input_attack && firingDelay < -3) {
 	level = 1;
 }
 
+if (keyboard_check_pressed(ord("X"))) {
+	var cur = obj_testMegaManX.equipped;
+	if (cur == 0) {
+		exit;
+	}
+	var special = obj_testMegaManX.weapons[cur];
+	with (instance_create_layer(x, y, "Bullets", special)) {
+		speed = 6 * obj_testMegaManX.facingDir;
+		direction = obj_testMegaManX.facingDir;
+		image_xscale = obj_testMegaManX.facingDir;
+	}
+}
+

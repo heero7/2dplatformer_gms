@@ -163,6 +163,34 @@
             "value": "0",
             "varName": "horizontalSpeed",
             "varType": 0
+        },
+        {
+            "id": "9ca01884-1192-49ab-9a9f-102682487e48",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "afraidOfHeights",
+            "varType": 3
+        },
+        {
+            "id": "654f5968-17d1-4cf8-9f39-9070f5c02a6d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "grounded",
+            "varType": 3
         }
     ],
     "solid": false,

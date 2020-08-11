@@ -66,9 +66,10 @@ verticalSpeed += grv_final;
 verticalSpeed = clamp(verticalSpeed, -vsp_max_final, vsp_max_final);
 
 // Ground Jump
-// TODO: Add jump buffer
-if (isGrounded && input_jump) {
+canJump -= 1;
+if (canJump > 0 && input_jump) {
 	verticalSpeed = jumpHeight;
+	canJump = 0;
 }
 // If the player didn't hold the jump button
 // to jump higher.
@@ -112,6 +113,7 @@ y += verticalSpeed; // Add the calucalted horizontal movement to this object's X
 
 isGrounded = place_meeting(x, y + 1, obj_wall);
 touchingWall = place_meeting(x + 1, y, obj_wall) - place_meeting(x - 1, y, obj_wall);
+if (isGrounded) canJump = 10;
 
 #region Animations / Sprite handling
 
@@ -129,7 +131,6 @@ if (touchingWall != 0 && verticalSpeed > 0 && movingDirection == touchingWall) {
 	facingDir *= -1;
 }
 
-show_debug_message(string(touchingWall));
 
 #endregion 
 

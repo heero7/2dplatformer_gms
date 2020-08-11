@@ -9,6 +9,10 @@ movingDirection = facingDir;
 // Vertical Movement.
 // Note: A negative value means we're in the air.
 
+// About to walk off the ledge
+if (isGrounded && afraidOfHeights && !place_meeting(x + horizontalSpeed, y + 1, obj_wall)) {
+	horizontalSpeed = -horizontalSpeed;
+}
 
 // Check for Horizontal Collisions.
 // Check to see if there is a collision, ahead of the
@@ -21,7 +25,6 @@ if (place_meeting(x + horizontalSpeed, y, obj_wall)) {
 		x += sign(horizontalSpeed); // Add each frame 1 pixel
 	}
 	horizontalSpeed = -horizontalSpeed; // Head the other direction.
-	show_debug_message(sign(horizontalSpeed));
 	image_xscale = sign(horizontalSpeed) * -1;
 }
 
@@ -41,3 +44,4 @@ if (place_meeting(x, y + verticalSpeed, obj_wall)) {
 }
 
 y += verticalSpeed; // Add the calucalted horizontal movement to this object's X coordinate.
+

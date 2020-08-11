@@ -18,6 +18,7 @@ dashCoolDown_max = 10;
 dashButtonReleased = true;
 
 hasControl = true;
+canJump = 0; // Time allowed to see if we can jump.
 
 enum PLAYERSTATE {
 	IDLE,
