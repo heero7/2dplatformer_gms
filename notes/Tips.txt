@@ -1,0 +1,10 @@
+Controllers
+- The slot the controller works on is 4. 
+- You can probably search for all the ports.
+
+Code
+- You can use #region to mark a certain area of code. 
+This is helpful since you can't create multiple step events or whatever.
+So instead, mark a region so you can minimize it when going through code.
+This will make things so much neater!
+- Use an enum for player states! 

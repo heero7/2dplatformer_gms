@@ -1,0 +1,40 @@
+- Move left and right [X]
+- Jump [X]
+- Double jump []
+- Attack
+	- Shoot [X]
+	- Shoot like Axl / Bass []
+	- Charge shot [X]
+	- Sword attack []
+	- Sword combos []
+	- Special attack weapons
+- Dash
+	- Dash Jump []
+	- Wall Dash Jump []
+	- Air Dash []
+- Wall jump
+	- Wall Slide []
+	- Perform simple attack while on the wall []
+- Variable weapons
+	- Cycle through weapons []
+	- Chip abilities upgrades []
+	- Armor upgrades []
+	- Cyber elf upgrades []
+- Enemies
+	- Simple enemies
+		- simple attacks []
+		- Can destroy [X]
+	- Can get hurt by enemies []
+	- Complex enemies []
+	- Boss AI []
+		- Sub boss []
+		- Main Boss []
+- Controller Input []
+	- Customize controls
+- Save / Load []
+- Cutscenes
+	- Dialogue []
+	- Cutscene animations []
+
+
+	

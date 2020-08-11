@@ -1,0 +1,7 @@
+- Can we look to create scripts for enemy AI?
+- Create scripts for common functionality
+	- Moving an object (player & enemy is similar code)
+- https://www.youtube.com/watch?v=93Dz2hgsZy0&t=261s
+	- Want to read on PlayerStates and code to make things cleaner.
+	- Video is on melee attacks, but it helps
+- Add friction to allow for less movement in the air.
