@@ -1,38 +1,28 @@
 {
-    "id": "90f32571-4ae7-4127-b05c-7b71b803a8e5",
+    "id": "363af612-d2e8-4bb0-bb58-9ae296657690",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_PlayerProjectile",
+    "name": "oShootable",
     "eventList": [
         {
-            "id": "970ca8ed-bf5e-40b3-bc2b-f4ed5adfae71",
+            "id": "e31f9657-a79e-4565-9217-c0265b567b35",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 77,
+            "enumb": 0,
             "eventtype": 8,
-            "m_owner": "90f32571-4ae7-4127-b05c-7b71b803a8e5"
+            "m_owner": "363af612-d2e8-4bb0-bb58-9ae296657690"
         },
         {
-            "id": "430e3a22-ded3-41d0-8636-c41f76a0a22f",
+            "id": "3d549dc4-10a9-47ef-ab75-a49a4ff1a911",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "36e8dcdf-0a02-4235-83bb-b3acb87affbd",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "90f32571-4ae7-4127-b05c-7b71b803a8e5"
-        },
-        {
-            "id": "4eff7177-e616-4aaa-be51-5de541bd3105",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "363af612-d2e8-4bb0-bb58-9ae296657690",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "90f32571-4ae7-4127-b05c-7b71b803a8e5"
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 3,
+            "m_owner": "363af612-d2e8-4bb0-bb58-9ae296657690"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,7 +43,21 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "25064191-4afd-46b3-8085-06587944fbd3",
+            "id": "d00ff1c8-c922-4d9f-83bb-be3e99434e0f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "healthPoints",
+            "varType": 0
+        },
+        {
+            "id": "95923b09-6bca-440f-936a-097b2e25ed7f",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -63,7 +67,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "attackPower",
+            "varName": "flash",
             "varType": 0
         }
     ],
